@@ -1,0 +1,187 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.about {
+    .flexCol;
+    .about-header {
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+        font-size: 4.6rem;
+        margin-top: 30px;
+    }
+
+    .phrase {
+        align-self: center;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .flash-quotes {
+        .flexCol;
+        .center;
+        background: @black-back;
+        color: @font-color;
+        height: 200px;
+        margin-top: 20px;
+
+        .carousel {
+
+            .carousel-inner {
+
+                .carousel-item {
+                    text-align: center;
+                    .quote {
+                        font-size: 2rem;
+                        text-align: center;
+                        padding: 50px;
+                        margin: 0px 80px;
+                        @media @mobile {
+                            font-size: 1.6rem;
+                            text-align: center;
+                            padding: 50px;
+                            margin: 0px 80px;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+//carousel
+.carousel.carousel-fade .carousel-item {
+    display: block;
+    opacity: 0;
+    transition: opacity ease-out .3s;
+
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    opacity: 1;
+    transition: opacity ease-in 2s;
+}
+
+//about the team
+.devs {
+    // background: yellow;
+    .flexRow;
+    flex-wrap: wrap;
+    .devs-header {
+        font-size: 2rem;
+        font-family: @indie-flower;
+    } 
+    //header about
+    .full-size {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        .flexCol;
+        .center;
+        .dev {
+            margin-top: -30px;
+            width: 500px;
+            height: 250px;
+            background-image: url('../images/muppets.jpg');
+            background-size: 500px;
+            background-repeat: none;
+            border-bottom: 6px solid @black;
+        }
+    }
+    @media @mobile {
+        height: 30vh;
+    }
+    @media @tablet {
+        height: 30vh;
+    }
+    .indevs {
+        width: 100%;
+        .flexRow;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .dev-info {
+            width: 16%;
+            margin: 25px;
+            &:hover {
+                border: 2px solid @black;
+                .fab {
+                    margin: 5px;
+                }
+            }
+            img {
+                width: 100%;
+                padding: 10px;
+            }
+            h2 {
+                font-size: 1.6rem;
+                text-align: center;
+                padding-bottom: 2px;
+                margin-bottom: 5px;
+            }
+            p {
+                text-align: center;
+            }
+            .fab {
+                font-size: 3.6rem;
+                margin: 5px;
+                text-decoration: none;
+                color: @black;
+            }
+            @media @mobile {
+                width: 50%;
+            }
+            @media @tablet {
+                width: 50%;
+            }
+        }
+    }
+}   
+
+
+
+
+footer {
+    width: 100%;
+    background: @black;
+    color: @white;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    clear: both;
+    position: relative;
+    margin-top: 3000px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    .flexCol;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+
+
+
+
+
+@media @tablet {
+    .devs {
+        .indevs {
+            .dev-info {
+                width: 48%;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
