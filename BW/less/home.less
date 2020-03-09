@@ -1,0 +1,69 @@
+.header {
+
+    .signup {
+
+        .action-head {
+            font-size: 4.6rem;
+            text-align: center;
+            margin-top: 30px;
+            font-family: @indie-flower;
+        }
+
+        .phrase {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        .quote {
+            text-align: center;
+        }
+    }
+ }
+
+.signup-btn {
+    .flexCol;
+    background: @black;
+    width: 100%;
+    height: 60.3vh;
+    margin-top: 30px;
+    align-content: center;
+    .center;
+
+    .phrase {
+        text-align: center;
+        padding: 50px 20px 20px 20px;
+        font-size: 1.2rem;
+        color: @font-color;
+    }
+
+    .quote {
+        text-align: center;
+        color: @font-color;
+    }
+
+    .btn-center {
+        .flexRow;
+        .center;
+        height: 100vh;
+        .react-btn {
+            border: 2px solid @white; 
+            background: @black;
+            height: 3.5rem;
+            width: 15rem;
+            border-radius: 20px;
+            color: @white;
+            &:hover {
+                color: @greenish;
+                border: 2px solid @greenish;
+            }
+        }
+    }
+    @media @mobile {
+        height: 30vh;
+    }
+    @media @tablet {
+        height: 30vh;
+    }
+    
+}
